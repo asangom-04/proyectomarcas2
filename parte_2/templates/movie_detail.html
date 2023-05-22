@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Detalles de la Película</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Detalles de la Película</h1>
+
+    <h2 id="movieTitle">{{ movie.title }}</h2>
+    <p id="overview">Descripción: {{ movie.overview }}</p>
+    <p id="releaseDate">Fecha de lanzamiento: {{ movie.release_date }}</p>
+    <p id="voteAverage">Calificación promedio: {{ movie.vote_average }}</p>
+
+    <a href="/movie_list">Volver a la lista</a>
+    <a href="/movie/{{ movie.id }}/cast">Ver Actores</a>
+</body>
+</html>

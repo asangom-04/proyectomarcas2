@@ -1,0 +1,71 @@
+/* styles.css */
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+h2 {
+    margin-top: 10px;
+}
+
+p {
+    margin-top: 5px;
+}
+
+a {
+    display: block;
+    margin-top: 10px;
+}
+
+ul {
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+/* Estilos específicos para movie_list.html */
+#movieList {
+    list-style-type: none;
+}
+
+/* Estilos específicos para movie_detail.html */
+#movieTitle {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+/* Estilos específicos para search_form.html */
+#searchForm {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#searchQuery {
+    width: 300px;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+input[type="submit"] {
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: #FFF;
+    border: none;
+    cursor: pointer;
+}
+
+#movieList {
+    list-style-type: none;
+}

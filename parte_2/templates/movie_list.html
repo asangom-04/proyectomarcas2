@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Películas Populares</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Películas Populares</h1>
+    
+    <ul id="movieList">
+        {% for movie in movies %}
+        <li><a href="/movie/{{ movie.id }}">{{ movie.title }}</a></li>
+        {% endfor %}
+    </ul>
+    
+    <a href="{{ url_for('movie_search') }}">Ir a la barra de búsqueda</a>
+</body>
+</html>
